@@ -1,0 +1,56 @@
+.transition-effect{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    transition: height 4s,width 2s;
+    transition-timing-function:
+    ease;
+}
+.transition-effect:hover{
+    height: 500px;
+    width: 100%;
+}
+.animation{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    animation-name: color;
+    animation-duration: 20s;
+    animation-delay: 1s;
+    animation-direction: alternate;
+
+    animation-fill-mode: backwards;
+    
+}
+@keyframes color{
+    0%{
+        left: 0;
+        top: 0px;
+        background-color:  red;
+    }
+    25%{
+        top: 0;
+        left: 200px;
+        right: 0;
+        background-color: hotpink;
+    }
+    50%{
+        left: 200px;
+        top: 200px;
+        bottom: 0;
+        background-color: blue;
+    }
+    75%{
+        left: 0;
+        right: 200px;
+        top: 200px;
+        background-color: aqua;
+    }
+    100%{
+        
+        top: 0;
+        left: 0;
+        background-color: yellow
+    }
+}
